@@ -118,15 +118,7 @@ public class MagazzinoSmartphone {
         
 
     public boolean equals(Object obj) {
-        boolean uguali = false;
-        if (this == obj) {
-            uguali = true;
-        } else {
-            if (obj instanceof MagazzinoSmartphone) {
-                
-        }
-        return uguali;
-    }
+        return true;
 
 }
 }

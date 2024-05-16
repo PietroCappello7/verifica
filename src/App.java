@@ -17,31 +17,32 @@ magazzinoSmartphone.addSmartphone(smartphone3);
 System.out.println(magazzinoSmartphone); 
 
 
-// magazzinoSmartphone.removeSmartphone(smartphone2);
-// System.out.println("magazzinoSmartphone senza Samsung Galaxy S21");
-// System.out.println(magazzinoSmartphone);
-// System.out.println("magazzinoSmartphone.getSmartphoneByBrand(\"Apple\")");
-// System.out.println(magazzinoSmartphone.getSmartphoneByBrand("Apple"));
-// System.out.println(magazzinoSmartphone.getSmartphonesByStorageCapacity(256));
-// System.out.println(magazzinoSmartphone.getSmartphonesByPriceRange(900, 1100));
+magazzinoSmartphone.removeSmartphone(smartphone2);
+System.out.println("magazzinoSmartphone senza Samsung Galaxy S21");
+System.out.println(magazzinoSmartphone);
+
+System.out.println("magazzinoSmartphone.getSmartphoneByBrand(\"Apple\")");
+System.out.println(magazzinoSmartphone.getSmartphoneByBrand("Apple"));
+System.out.println(magazzinoSmartphone.getSmartphonesByStorageCapacity(256));
+System.out.println(magazzinoSmartphone.getSmartphonesByPriceRange(900, 1100));
 
 
 // // Generate test cases for equals method
-// System.out.println("smartphone1.equals(smartphone2)");
-// System.out.println(smartphone1.equals(smartphone2)); // false
-// System.out.println("smartphone2.equals(smartphone3)");
-// System.out.println(smartphone2.equals(smartphone3)); // false
-// System.out.println("smartphone1.equals(smartphone1)");
-// System.out.println(smartphone1.equals(smartphone1)); // true
+System.out.println("smartphone1.equals(smartphone2)");
+System.out.println(smartphone1.equals(smartphone2)); // false
+System.out.println("smartphone2.equals(smartphone3)");
+System.out.println(smartphone2.equals(smartphone3)); // false
+System.out.println("smartphone1.equals(smartphone1)");
+System.out.println(smartphone1.equals(smartphone1)); // true
 
 // // Generate test cases for toString method
-// System.out.println("smartphone1.toString()"); 
-// System.out.println(smartphone1); // Brand: Apple, Model: iPhone 12, Storage Capacity: 128GB, Price: €999.99
+System.out.println("smartphone1.toString()"); 
+System.out.println(smartphone1); // Brand: Apple, Model: iPhone 12, Storage Capacity: 128GB, Price: €999.99
 
 // // Generate test cases for costruttore di copia
-// MagazzinoSmartphone magazzinoSmartphone2 = new MagazzinoSmartphone(magazzinoSmartphone);
+MagazzinoSmartphone magazzinoSmartphone2 = new MagazzinoSmartphone(magazzinoSmartphone);
 
 // // Generate test cases for equals method in MagazzinoSmartphone
-// System.out.println(magazzinoSmartphone.equals(magazzinoSmartphone2)); // true
+System.out.println(magazzinoSmartphone.equals(magazzinoSmartphone2)); // true
     }
 }
