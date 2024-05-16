@@ -9,31 +9,35 @@ public class MagazzinoSmartphone {
 
     public MagazzinoSmartphone(MagazzinoSmartphone other) {
         for (int i = 0; i < 10; i++) {
-            this.smartphones[i] = new Smartphone(other.smartphones[i]);
+            smartphones[i] = new Smartphone(other.smartphones[i]);
         }
+    }
+
+    public int getCount() {
+        for (int i = 0; i < smartphones.length; i++) {
+            if(smartphones[i] != null){
+                count++;
+            }
+        }
+        return count;
     }
 
     public void addSmartphone(Smartphone smartphone) {
         for (int i = 0; i < 10; i++) {
             if(smartphones[i] != null){
-                smartphones[i] = smartphone;
+                smartphones[i] = new Smartphone(smartphone);
                 count++;
             }
         }
     }
 
     public void removeSmartphone(Smartphone smartphone) {
-        int i = 0;
-        boolean trovato = false;
-        while (i < 10 && trovato) {
-            if (smartphones[i] != null) {
-                if (smartphones[i].equals(smartphone)) {
-                    trovato = true;
-                    smartphones[i] = null;
-                    count--;
-                }
+        for (int i = 0; i < smartphones.length; i++) {
+            if(smartphones[i].equals(smartphone)){
+                smartphones[i] = null;
+                count--;
             }
-            i++;
+            
         }
     }
 
@@ -107,21 +111,11 @@ public class MagazzinoSmartphone {
     public String toString() {
         String s="";
         for (int i = 0; i < count; i++) {
-            s+= smartphones[i].toString();
+            s+=smartphones[i].toString()+"/n";
         }
         return s;
     }
         
-
-    public int getCount() {
-        int count =0;
-        for (int i = 0; i < 10; i++) {
-            if(smartphones[i] != null){
-                count++;
-            }
-        }
-        return count;
-    }
 
     public boolean equals(Object obj) {
         boolean uguali = false;
@@ -129,17 +123,10 @@ public class MagazzinoSmartphone {
             uguali = true;
         } else {
             if (obj instanceof MagazzinoSmartphone) {
-                MagazzinoSmartphone a = (MagazzinoSmartphone) obj;
-                for (int i = 0; i < 10; i++) {
-                    if (smartphones[i] != null && a.smartphones[i] != null) {
-                        if (this.smartphones[i].equals(a.smartphones[i])) {
-
-                        }
-                    }
-                }
-            }
+                
         }
         return uguali;
     }
 
+}
 }

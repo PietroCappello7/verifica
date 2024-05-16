@@ -5,9 +5,10 @@ MagazzinoSmartphone magazzinoSmartphone = new MagazzinoSmartphone();
 Smartphone smartphone1 = new Smartphone("Apple", "iPhone 12", 128, 999.99);
 Smartphone smartphone2 = new Smartphone("Samsung", "Galaxy S21", 256, 899.99);
 Smartphone smartphone3 = new Smartphone("OnePlus", "9 Pro", 256, 1069.99);
-// magazzinoSmartphone.addSmartphone(smartphone1);
-// magazzinoSmartphone.addSmartphone(smartphone2);
-// magazzinoSmartphone.addSmartphone(smartphone3);
+magazzinoSmartphone.addSmartphone(smartphone1);
+magazzinoSmartphone.addSmartphone(smartphone2);
+magazzinoSmartphone.addSmartphone(smartphone3);
+
 // Generate test cases for toString method in MagazzinoSmartphone
 // MagazzinoSmartphone: 
 // Brand: Apple, Model: iPhone 12, Storage Capacity: 128GB, Price: 999.99
